@@ -8,6 +8,9 @@ For each character, we first check if it is a letter. If it is, we encrypt/decry
 The encryption is performed by shifting the index of the letter backward within the range [0, 26]. 
 Then, we encrypt this index, which results in another number within the [0, 26] range. This index is then mapped back to the letter range: [65, 90] if we have encrypted an uppercase letter, and [97, 122] if we have encrypted a lowercase letter.
 
+
+# Kernel
+
 ```
 __global__ void cudaEncryptMessage(char* message, int key, int textLength) {
 	int i = threadIdx.x + blockDim.x * blockIdx.x;
