@@ -1,3 +1,4 @@
+# Parallel Caesar Cipher
 
 In the encryption/decryption method we encrypt/decrypt all characters that are letters. 
 The range for uppercase letters is [65, 90], and for lowercase letters, it is [97, 122].
